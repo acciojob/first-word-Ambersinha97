@@ -1,7 +1,7 @@
 function firstWord(s) {
   // your code here
 	let str=""
-	s=s.trimStart()
+	s=s.trimstart()
 	for(let i=0;i<s.length;i++){
 		if(s.charAt(i)==" ")
 	return str
