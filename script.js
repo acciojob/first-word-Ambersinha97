@@ -1,12 +1,13 @@
 function firstWord(s) {
   // your code here
 	let str=""
-	let i=0
-	while(s.charAt(i)!=" " && i<s.length){
-		str+=s.charAt(i)
-	i++
-	}
+	s=s.trimStart()
+	for(let i=0;i<s.length;i++){
+		if(s.charAt(i)==" ")
 	return str
+	else
+			str+=s.charAt(i)
+		}
 }
 
 // Do not change the code below
